@@ -1,5 +1,4 @@
 # FILM: Following Instructions in Language with Modular Methods
-This is an exprimental release of the code for the paper:
 
 [FILM: Following Instructions in Language with Modular Methods](https://arxiv.org/abs/2110.07342)<br />
 So Yeon Min, Devendra Singh Chaplot, Pradeep Ravikumar, Yonatan Bisk, Ruslan Salakhutdinov<br />
