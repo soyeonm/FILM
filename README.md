@@ -196,6 +196,10 @@ Do not enable "-v 1" on a headless machine.
 
 --save_pictures: Save the map, fmm_dist (visualization of fast marching method), RGB frame pictures. The pictures will be saved to "pictures/$args.eval_split$/$args.set_dn$"
 
+--appended: Use **low-level language + high-level language**
+
+-v: Visualize (show windows of semantic map/ rgb on the monitor). **Do not use this on headless mode**
+
 ## Evaluate results for valid sets
 The output of your runs are saved in the pickles of "results/analyze_recs/".
 For example, you may see results like the following in your "results/analyze_recs/".
