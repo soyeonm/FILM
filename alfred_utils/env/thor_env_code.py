@@ -964,20 +964,24 @@ class ThorEnvCode(Controller):
             obs, rew, done, info = self.step(action, smooth_nav=smooth_nav)
         elif "LookUp" in action:
             #if abs(self.event.metadata['agent']['cameraHorizon']-0) <5:
-            if abs(self.camera_horizon - 0) <5:
-                action = dict(action="LookUp_0",
-                              forceAction=True)
-            else:
-                action = dict(action=action,
+            #if abs(self.camera_horizon - 0) <5:
+            #    action = dict(action="LookUp_0",
+            #                  forceAction=True)
+            #else:
+            #    action = dict(action=action,
+            #                  forceAction=True)
+            action = dict(action=action,
                               forceAction=True)
             obs, rew, done, info = self.step(action, smooth_nav=smooth_nav)
         elif "LookDown" in action:
             #if abs(self.event.metadata['agent']['cameraHorizon'] - 90) <5:
-            if abs(self.camera_horizon - 90) <5:
-                action = dict(action="LookDown_0",
-                              forceAction=True)
-            else:
-                action = dict(action=action,
+            #if abs(self.camera_horizon - 90) <5:
+            #    action = dict(action="LookDown_0",
+            #                  forceAction=True)
+            #else:
+            #    action = dict(action=action,
+            #                  forceAction=True)
+            action = dict(action=action,
                               forceAction=True)
             obs, rew, done, info= self.step(action, smooth_nav=smooth_nav)
         elif "OpenObject" in action:

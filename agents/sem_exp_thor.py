@@ -1326,6 +1326,7 @@ class Sem_Exp_Env_Agent_Thor(ThorEnvCode):
 
 	def depth_pred_later(self, sem_seg_pred):
 		rgb = cv2.cvtColor(self.event.frame.copy(), cv2.COLOR_RGB2BGR)#shape (h, w, 3)
+		pickle.dump(rgb, open('temp_pickles/depth_rgb.p', 'wb'))
 		rgb_image = torch.from_numpy(rgb).permute((2, 0, 1)).unsqueeze(0).half() / 255
 		
 		if abs(self.camera_horizon - 0) <5:
@@ -1356,6 +1357,7 @@ class Sem_Exp_Env_Agent_Thor(ThorEnvCode):
 		depth = obs[:, :, 3:4]	
 
 		sem_seg_pred = self.seg.get_sem_pred(rgb.astype(np.uint8)) #(300, 300, num_cat)
+		pickle.dump(rgb.astype(np.uint8), open('temp_pickles/sem_seg_rgb.p', 'wb'))
 
 		if self.args.use_learned_depth: 
 			include_mask = np.sum(sem_seg_pred, axis=2).astype(bool).astype(float)

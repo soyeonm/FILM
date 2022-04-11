@@ -313,6 +313,8 @@ def get_args():
     parser.add_argument('--no_opp_sidestep',action='store_true')
     parser.add_argument('--no_pickup',action='store_true')
 
+    parser.add_argument('--reward_config', default='alfred_utils/models/config/rewards.json')
+
     # parse arguments
     args = parser.parse_args()
 
