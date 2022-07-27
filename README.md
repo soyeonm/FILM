@@ -341,7 +341,7 @@ Avg  |  24.87 | 26.51
 Most of [alfred_utils](https://github.com/soyeonm/FILM/control_helper/alfred_utils) comes from [Mohit Shridhar's ALFRED repository](https://github.com/askforalfred/alfred).
 [models/depth](https://github.com/soyeonm/FILM/tree/public/models/depth) comes from [Valts Blukis' HLSM](https://github.com/valtsblukis/hlsm).
 
-Code for semantic mapping comes from [Devendra Singh Chaplot's OGN](https://github.com/devendrachaplot/OGN)
+Code for semantic mapping comes from [Devendra Singh Chaplot's OGN](https://github.com/devendrachaplot/Object-Goal-Navigation)
 
 ### Bibtex:
 ```
