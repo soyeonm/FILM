@@ -322,7 +322,7 @@ def get_args():
     args.version = 'v1.1'
     args.eval = 1
     args.alfred = 1   
-    args.ground_truth_segmentation = True
+    #args.ground_truth_segmentation = True
     args.ignore_categories = True
     args.no_common_objs = True
     args.matrix = True
