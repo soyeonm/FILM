@@ -124,7 +124,7 @@ mv Pretrained_Models_FILM/best_model_multi.pt models/semantic_policy/best_model_
 To use a better perfoming model trained with a new seed (27.80%),
 
 ```
-mv Pretrained_Models_FILM/best_model_multi.pt models/semantic_policy/new_best_model.pt
+mv Pretrained_Models_FILM/new_best_model.pt models/semantic_policy/best_model_multi.pt
 ```
 
 ## Run FILM on Valid/ Tests Sets
