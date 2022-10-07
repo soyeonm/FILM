@@ -1420,10 +1420,8 @@ class Sem_Exp_Env_Agent_Thor(ThorEnvCode):
 
 		sem_map += 5
 
-		if self.args.ground_truth_segmentation:
-			no_cat_mask = sem_map == 5 + args.num_sem_categories -1
-		else:
-			no_cat_mask = sem_map == 20
+		no_cat_mask = sem_map == 5 + args.num_sem_categories -1
+		
 		map_mask = np.rint(map_pred) == 1
 		map_mask = np.logical_or(map_mask, self.collision_map==1)
 		exp_mask = np.rint(exp_pred) == 1
